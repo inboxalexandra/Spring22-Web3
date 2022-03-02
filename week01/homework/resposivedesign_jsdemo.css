@@ -1,7 +1,6 @@
-=* {
+* {
 	margin: 0;
 	padding: 0;
-	
 }
 
 body, html {
@@ -10,7 +9,7 @@ body, html {
     justify-content: center;
     height: 100vh;
     width: 100%;
-      }
+}
 
 .headshot {
     float: right;
@@ -40,26 +39,20 @@ p {
 /* ------- THE FLEXBOX CONTAINER --------- */
 
 .flexbox-container-1 {
+    flex-wrap: wrap;
+    flex-direction: row;
     display: flex;
     justify-content: center;
     padding-top: 3em;
-   
+    align-items: center;
 }
 
-.flexbox-container-2 {
-    display: flex;
-    justify-content: center;
-    padding-top: 1em;
-    width: 100%;
+.flexbox-container-1 div {
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.flexbox-container-3 {
-    display: flex;
-    justify-content: center;
-    padding-top: 1em;
-    padding-bottom: 5em;
-    width: 100%;
-}
+/*--- might delete  ---*/
 
 .flexbox-item {
     width: 200px;
@@ -72,10 +65,14 @@ p {
 .flexbox-item-1 {
     min-height: 100px;
     float: left;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .flexbox-item-2 {
     min-height: 200px;
+     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .flexbox-item-3 {
@@ -83,32 +80,11 @@ p {
     float: right;
 }
 
-
-
-
-
-
 /* ------- CONTACT FORM --------- */
 
 .connect {
     margin-left: 1.8em;
 }
-
-
-
-button.blue {
-    background-color: #3498db;
-}
-
-button.green {
-    background-color: #2ecc71;
-}
-
-button.orange {
-   background-color: orangered;
-}
-
-
 
 @media (min-width:576px) {
     p {
@@ -118,7 +94,6 @@ button.orange {
     h1, h2, h3 {
         font-size: 1rem;
     }
-   
     .headshot {
         width: 20%;
     }
@@ -135,8 +110,6 @@ button.orange {
         width: 40%;
     }
 }
-
-
 
 @media (min-width:576px) {
     p {
@@ -186,7 +159,6 @@ button.orange {
     .connect {
         width: 40%;
     }
-   
 }
 
 @media (min-width:992px) {
@@ -200,8 +172,6 @@ button.orange {
     .headshot {
         width: 20%;
     }
-
-
     .flexbox-container-1 {
         width: 100%;
     }
@@ -211,5 +181,4 @@ button.orange {
     .flexbox-container-3 {
         width: 100%;
     }
-   
 }
