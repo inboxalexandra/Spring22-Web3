@@ -6,6 +6,7 @@
     --charcoal: rgb(78, 111, 119);
     --periwinkle: rgb(144, 151, 192); 
     --white: rgb(255, 255, 255);
+    --yellow: rgb(238,210,2)
 }
 
 
@@ -18,7 +19,7 @@ h2 {
 }
 
 .bg-dark {
-    background-color: var(--charcoal) !important;
+    background-color: var(--yellow) !important;
 }
 
 .btn-success {
