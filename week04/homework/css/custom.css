@@ -17,7 +17,7 @@ h2 {
 }
 
 p {
-    font-family: Darker Grotesque;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .navbar-dark {
@@ -59,7 +59,10 @@ p {
     user-select: none;
   }
 
+.navbar-type {
 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {
