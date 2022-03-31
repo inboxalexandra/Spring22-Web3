@@ -8,7 +8,9 @@
     --white: rgb(255, 255, 255);
 }
 
-
+h1 {
+    font-family: Abril Fatface;
+}
 
 h2 {
     font-family: Darker Grotesque;
