@@ -26,7 +26,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="../img/rosamade_logo_navbar.png" alt="Rosamade Logo">
+              <a class="navbar-brand" href="../index.html"><img src="../img/rosamade_logo_navbarv3.png" alt="Rosamade Logo">
 
             </a>
 
@@ -45,23 +45,23 @@
                 </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/shop.html">Shop</a>
+                    <a class="nav-link text-dark text-decoration-none" href="../pages/shop.html">Shop</a>
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/blog.html">Blog</a>
+                    <a class="nav-link text-dark text-decoration-none" href="../pages/blog.html">Blog</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/faq.html">FAQ</a>
+                    <a class="nav-link text-dark text-decoration-none" href="../pages/faq.html">FAQ</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link text-dark text-decoration-none" href="#">Contact</a>
                   </li>
 
                   <li class="nav-item">
-                      <a class="nav-link" href="../pages/checkout.html">
+                      <a class="nav-link text-dark text-decoration-none" href="../pages/checkout.html">
                         
                     <i class="bi bi-cart"></i></a>
                   </li>
@@ -73,25 +73,111 @@
           </nav>
     </header>
     
-    <main class="container">
-      <section class="row">
-        <div class="col-12">
-          <div class="bg-secondary" style="min-height: 200px;">Banner Image - Contact Page</div>
+    <main>
+      <main id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/banner_contact.png" class="d-block w-100" alt="Contact page banner">
+              <div class="carousel-caption d-none d-md-block py-5">
+              </div>
+            </div>
         </div>
-      </section>
 
-      <hr>
- 
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 order-lg-first bg-primary">
-            <div style="min-height: 500px;">Contact Form</div>
-           </div>
-          <div class="col-lg-4 order-lg-second bg-warning">
-        <div style="min-height: 500px;">Map and Social Media Links</div>
+    <hr>
+
+    <div class="container">
+
+      <div class="row justify-content-center">
+
+        <div class="col-lg-8 p-3">
+          <div style="min-height: 300px;">
+
+            <div class="container">
+              <h3>For all questions regarding orders, inventory, and special requests send us a message.</h3>
+              <br>
+              <form class="row g-3 needs-validation align-items-center p-3" novalidate>
+        
+                <div class="col-md-4 order-lg-first">
+                  <label for="validationCustom01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="Jose" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4 order-lg-first">
+                  <label for="validationCustom02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="Perez" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4 order-lg-first">
+                  <label for="validationCustomUsername" class="form-label">Email</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please provide your email.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 order-lg-first">
+                  <label for="validationCustom03" class="form-label">City</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">State</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+        
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea">Comments</label>
+                </div>
+        
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 p-3">
+          <div style="min-height: 300px;">
+            <img src="../img/candle_amathyst.png" alt="Amathyst Candle">
+          </div>
+        </div>
       </div>
-
-    </main>
+    </div>
+  </main>
 
        <!------------ FOOTER -------------------->
    
@@ -117,7 +203,7 @@
     
         <a href="../index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
 
-          <img src="../img/rosamade_text_logo.png" alt="Rosamade Logo">
+          <img src="../img/rosamade_logo_footer.png" alt="Rosamade Logo">
 
         </a>
        

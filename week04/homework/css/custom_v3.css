@@ -6,23 +6,18 @@
     --charcoal: rgb(78, 111, 119);
     --periwinkle: rgb(144, 151, 192); 
     --white: rgb(255, 255, 255);
-    --yellow: rgb(238,210,112)
 }
 
 h1 {
-    font-family: Josephine Slab;
+    font-family: Oooh Baby;
 }
 
 h2 {
     font-family: Darker Grotesque;
 }
 
-h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .navbar-dark {
@@ -30,7 +25,7 @@ p {
 }
 
 .bg-dark {
-    background-color: var(--yellow) !important;
+    background-color: var(--charcoal) !important;
 }
 
 .btn-success {
@@ -64,7 +59,10 @@ p {
     user-select: none;
   }
 
+.navbar-type {
 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {

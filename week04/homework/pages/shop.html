@@ -26,112 +26,105 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="../img/rosamade_logo_navbar.png" alt="Rosamade Logo">
-
+              <a class="navbar-brand" href="../index.html"><img src="../img/rosamade_logo_navbarv3.png" alt="Rosamade Logo">
             </a>
-
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">
-
                   </a>
-
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark text-decoration-none" href=#">Shop</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link text-dark text-decoration-none" href="../pages/blog.html">Blog</a>
                 </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/blog.html">Blog</a>
-                  </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark text-decoration-none" href="../pages/faq.html">FAQ</a>
+                </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/faq.html">FAQ</a>
-                  </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark text-decoration-none" href="../pages/contact.html">Contact</a>
+                </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/contact.html">Contact</a>
-                  </li>
-
-                  <li class="nav-item">
-                      <a class="nav-link" href="../pages/checkout.html">
-                        
-                    <i class="bi bi-cart"></i></a>
-                  </li>
-                
+                <li class="nav-item">
+                    <a class="nav-link text-dark text-decoration-none" href="../pages/checkout.html">
+                  <i class="bi bi-cart"></i></a>
+                </li>
                 </ul>
-                     
               </div>
             </div>
           </nav>
     </header>
     
-    <main class="container">
-      <section class="row">
-        <div class="col-12">
-          <div class="bg-secondary" style="min-height: 200px;">Promotional Banner</div>
+    <main>
+      <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/banner_shop.png" class="d-block w-100" alt="Shop page banner">
+              <div class="carousel-caption d-none d-md-block py-5">
+              </div>
+            </div>
         </div>
-      </section>
 
-      <hr>
+     <!------------------------------Merch for Sale----------------------------------->
 
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 order-lg-first">  
-            <a href="../homework/pages/product_page3.html">Product 1
-              <img src="../img/soy_citron.png" alt="Soy Citron Candle">
+     <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom"></h2>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+            <div class="d-flex flex-column h-100 p-3 pb-3 text-white text-shadow-1">
+               <a href="../homework/pages/product_page1.html"></a>
+               <img src="../img/soy_citron.png" alt="Soy Citron Candle">
+              <h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-dark text-center">Soy Citron Candle</h2>
+              
+              <a href="../pages/product_page1.html"
+                <button type="button" class="btn btn-warning btn-lg">$22.00</button>
             </a>
+            </div>
           </div>
-
-          <div class="col-lg-4 order-lg-last">
-            <a href="../homework/pages/product_page3.html">Product 2
+        </div>
+  
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+            <div class="d-flex flex-column h-100 p-3 pb-3 text-white text-shadow-1">
               <img src="../img/soy_fig.png" alt="Soy Fig Candle">
-            </a>
+              <h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-dark text-center">Soy Fig Candle</h2>
+         
+              <a href="../pages/product_page2.html"
+                <button type="button" class="btn btn-warning btn-lg">$22.00</button>
+                </a>
+            </div>
           </div>
+        </div>
 
-          <div class="col-lg-4 order-lg-last">
-            <a href="../homework/pages/product_page3.html">Product 3
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+            <div class="d-flex flex-column h-100 p-3 pb-3 text-white text-shadow-1">
               <img src="../img/soy_grapefruit.png" alt="Soy Grapefruit">
-            </a>
+              <h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-dark text-center">Soy Grapefruit Candle</h2>
+             
+              <a href="../pages/product_page3.html"
+                <button type="button" class="btn btn-warning btn-lg">$22.00</button>
+                </a>
+            </div>
           </div>
-
         </div>
       </div>
+    </div>
+  
+  </main>
 
+  <!------------------Merch for Sale---------------------->
 
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 order-lg-first">  
-            <a href="../homework/pages/product_page3.html">Product 1
-              <img src="../img/soy_citron.png" alt="Soy Citron Candle">
-            </a>
-          </div>
-
-          <div class="col-lg-4 order-lg-last">
-            <a href="../homework/pages/product_page3.html">Product 2
-              <img src="../img/soy_fig.png" alt="Soy Fig Candle">
-            </a>
-          </div>
-
-          <div class="col-lg-4 order-lg-last">
-            <a href="../homework/pages/product_page3.html">Product 3
-              <img src="../img/soy_grapefruit.png" alt="Soy Grapefruit">
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-    </main>
    
        <!------------ FOOTER -------------------->
 
@@ -157,7 +150,7 @@
     
         <a href="../index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
 
-          <img src="../img/rosamade_text_logo.png" alt="Rosamade Logo">
+          <img src="../img/rosamade_logo_footer.png" alt="Rosamade Logo">
 
         </a>
        
@@ -175,7 +168,7 @@
           
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shop</a></li>
               <li class="nav-item mb-2"><a href="../pages/blog.html" class="nav-link p-0 text-muted">Blog</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+              <li class="nav-item mb-2"><a href="../pages/contact.html" class="nav-link p-0 text-muted">Contact</a></li>
               <li class="nav-item mb-2"><a href="../pages/faq.html" class="nav-link p-0 text-muted">FAQ</a></li>
             </ul>
           </div>
