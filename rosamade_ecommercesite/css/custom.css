@@ -9,6 +9,14 @@
     --yellow: rgb(238,210,112)
 }
 
+.carousel-caption {
+  top: -30px;
+}
+
+.modal_buttons {
+  color: var(--charcoal);
+}
+
 h1 {
     font-family: Josephine Slab;
 }
