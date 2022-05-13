@@ -12,18 +12,20 @@
             overflow: hidden;
             animation: colorBody 5s;
             position: relative;
+            height: 100vh;
         }
 
         .circle {
             border-radius: 50%;
-            background-color: hsl(0, 100%, 50%);
+           
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 1vw;
-            height: 1vh;
+            width: 0;
+            height: 0;
             animation: circleAnim 5s 2s forwards;
+            z-index: 5; 
         }
 
         .strip {
@@ -67,6 +69,17 @@
             animation-duration: 4s;
         }
 
+        main {
+            width: 960px;
+            margin: auto;
+            position: absolute;
+            top: 20vh;
+            left: ;
+            animation: showMain 3s 5500ms forwards;
+            opacity: 0;
+            z-index: 10;
+        }
+
         /*ANIMATIONS*/
         @keyframes rightToLeft {
             from {right: -100vw;}
@@ -84,14 +97,38 @@
         }
 
         @keyframes circleAnim {
-            from {
+            0% {
+                background-color: hsl(105, 100%, 50%);
                 width: 1vh; 
                 height: 1vh;
             }
-            to {
-                width: 100vw;
-                height: 100vh;
+
+            20% {
+                background-color: hsl(195, 100%, 50%);
             }
+
+            40% {
+                background-color: hsl(45, 100%, 50%);
+            }
+
+            60% {
+                background-color: hsl(265, 100%, 50%);
+            }
+
+            80% {
+                background-color: hsl(0, 100%, 50%);
+            }
+           
+            100% {
+                background-color: hsl(0, 100%, 50%);
+                width: max(150vw, 150vh);
+                height: max(150vw, 150vh);
+            }
+        
+        @keyframes showMain {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
 
     </style>
 
@@ -103,5 +140,11 @@
     <div class="strip" id="strip3"></div>
     <div class="strip" id="strip4"></div>
    
+    <main>
+        <h1>Welcome to the World of CSS and </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla porttitor massa id neque aliquam vestibulum. Vulputate ut pharetra sit amet aliquam id diam. Amet purus gravida quis blandit turpis cursus in. Nibh cras pulvinar mattis nunc sed. Sit amet venenatis urna cursus. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Magna fermentum iaculis eu non diam. Faucibus vitae aliquet nec ullamcorper. At varius vel pharetra vel.
+        </p>
+    </main>
+
 </body>
 </html>
