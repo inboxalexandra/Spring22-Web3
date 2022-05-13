@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations in Class</title>
+
+    <style>
+        body {
+            margin: 0px;
+            overflow: hidden;
+            animation: colorBody 5s;
+            position: relative;
+        }
+
+        .circle {
+            border-radius: 50%;
+            background-color: hsl(0, 100%, 50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1vw;
+            height: 1vh;
+            animation: circleAnim 5s 2s forwards;
+        }
+
+        .strip {
+            height: 25vh;
+            width: 100vw;
+            position: absolute;
+        }
+
+        #strip1 {
+            background-color: hsl(45, 100%, 50%);
+            /* right: -100vw; */
+            top: 0;
+            animation-name: rightToLeft;
+            animation-duration: 3s;
+            /* animation-fill-mode: forwards; */
+        }
+
+        #strip2 {
+            background-color: hsl(105, 100%, 50%);
+            left: -100vw;
+            top: 25vh;
+            animation-name: leftToRight;
+            animation-delay: 1s;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        #strip3 {
+            background-color: hsl(195, 100%, 50%);
+           
+            top: 50vw;
+            animation-name: rightToLeft;
+            animation-duration: 4s;
+        }
+
+        #strip4 {
+            background-color: hsl(265, 100%, 50%);
+        
+            top: 75vw;
+            animation-name: leftToRight;
+            animation-duration: 4s;
+        }
+
+        /*ANIMATIONS*/
+        @keyframes rightToLeft {
+            from {right: -100vw;}
+            to {right:0;}
+        }
+
+        @keyframes leftToRight {
+            form {left: -100vw;}
+            to {left:0;}
+        }
+
+        @keyframes colorBody {
+            from {background-color: hsl(0, 100%, 100% );}
+            to {background-color: hsl(0, 100%, 50%);}
+        }
+
+        @keyframes circleAnim {
+            from {
+                width: 1vh; 
+                height: 1vh;
+            }
+            to {
+                width: 100vw;
+                height: 100vh;
+            }
+
+    </style>
+
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="strip" id="strip1"></div>
+    <div class="strip" id="strip2"></div>
+    <div class="strip" id="strip3"></div>
+    <div class="strip" id="strip4"></div>
+   
+</body>
+</html>
