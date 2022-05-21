@@ -34,8 +34,8 @@ function setup(){
 }
 
 function draw(){
-    background(90, 40, 100);
-
+    background(170, 60, 100);
+   
     noFill();
     stroke(270, 80, 80);
     strokeWeight(10);
@@ -46,9 +46,12 @@ function draw(){
     fill(270, 80, 80);
     text (clickCounter, 12, 28);
 
+   
+
     noStroke();
     circleClr = color(sliderHue.value(), 80, 100);
     fill (circleClr);
+    
     circle(posX, posY, radius * 2);
     if(posX + radius >= width || posX - radius <= 0){
         velX = velX * -1;
